@@ -1,3 +1,4 @@
+
 /**
  * product.models.jsでexportsしたmoduleを取得
  */
@@ -11,5 +12,6 @@ module.exports = {
   async getAll() {
     const products = await productsModels.getAll();
     return await products;
+
   },
 };
