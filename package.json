@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "@types/express": "^4.17.17",
     "chai": "^4.3.7",
     "chai-http": "^4.3.0",
     "dotenv": "^16.0.3",
@@ -10,22 +9,12 @@
     "knex": "^2.4.2",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
-    "npm-install-missing": "^0.1.4",
     "react": "^18.2.0",
-    "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1"
   },
   "scripts": {
-    "start": "nodemon ./server.js",
-    "makeMigrate": "knex migrate:make --knexfile knexfile.js",
-    "migrate": "knex migrate:latest --knexfile knexfile.js",
-    "seed": "knex seed:make --knexfile knexfile.js",
-    "seedRun": "knex seed:run --knexfile knexfile.js",
-    "rollback": "knex migrate:rollback --knexfile knexfile.js "
-  },
-  "dependencies": {
-    "pg": "^8.11.0"
+    "start": "nodemon ./index.tsx"
   }
 }
