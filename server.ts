@@ -3,7 +3,11 @@ const app: express.Express = express();
 const PORT = 3000;
 const knex = require("knex");
 const productsController = require("./src/product.controller");
-//a
+
+app.set("views", `${__dirname}/templates`);
+app.set("view engine", "ejs");
+
+
 app.use(express.json());
 app.use("/", express.static(__dirname + "/public"));
 
