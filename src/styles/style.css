@@ -1,0 +1,63 @@
+#root {
+    text-align: center;
+}
+table{
+    margin: auto;
+    border-collapse: collapse; /* 隣接するセルの罫線を重ねて表示する */
+}
+
+.itemId {
+    text-align: center;
+    width: 5%;
+}
+
+.itemName {
+    text-align: center;
+    width: 20%;
+    
+}
+
+.itemDescription {
+    text-align: left;
+    width: 30%;
+    
+}
+
+.itemStatus {
+    text-align: center;
+    width: 20%;
+    
+}
+
+.request {
+    text-align: center;
+    width: 25%;
+    
+}
+
+.subjectDescription {
+    text-align: center;
+}
+
+.headline{
+    background-color: lightsalmon;
+    font-weight: bold;
+    height: 50px;
+}
+
+tr{
+    height:120px;
+    border: 1px solid #000000; /* 境界線を実線で指定する */
+}
+
+th{
+    border: 1px solid #000000; /* 境界線を実線で指定する */
+}
+
+td{
+    border: 1px solid #000000; /* 境界線を実線で指定する */
+}
+
+.comment {
+    height: 60px;
+}

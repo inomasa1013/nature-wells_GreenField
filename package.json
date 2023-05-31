@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "chai": "^4.3.7",
     "chai-http": "^4.3.0",
     "dotenv": "^16.0.3",
@@ -9,12 +10,38 @@
     "knex": "^2.4.2",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
+    "npm-install-missing": "^0.1.4",
     "react": "^18.2.0",
-    "typescript": "^5.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.6.2",
     "webpack": "^5.84.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
-    "start": "nodemon ./index.tsx"
+    "start": "nodemon ./server.ts",
+    "makeMigrate": "knex migrate:make --knexfile knexfile.js",
+    "migrate": "knex migrate:latest --knexfile knexfile.js",
+    "seed": "knex seed:make --knexfile knexfile.js",
+    "seedRun": "knex seed:run --knexfile knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile knexfile.js ",
+    "start2": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
